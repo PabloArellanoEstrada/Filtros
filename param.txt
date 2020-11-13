@@ -1,8 +1,9 @@
-.param C1 2.000000E-06
-.param C2 1.000000E-06
-.param C3 2.000000E-06
-.param R1 4.000000E+01
-.param R2 1.000000E+02
-.param R3 2.000000E+02
-.param R4 3.000000E+02
+.param C1 2.000000E-07
+.param C2 1.500000E-07
+.param R1 1.000000E+03
+.param R2 1.500000E+03
+.param R3 2.000000E+03
+.param R4 3.000000E+03
+.param R5 2.500000E+03
+.param R6 1.000000E+03
 

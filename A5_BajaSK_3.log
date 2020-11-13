@@ -1,21 +1,21 @@
-Circuit: * C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\A5_BajaSK_3.asc
+Circuit: * C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\Filtros\A5_BajaSK_3.asc
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Thu Nov 12 22:11:09 2020
-Total elapsed time: 0.568 seconds.
+Date: Fri Nov 13 14:32:10 2020
+Total elapsed time: 0.099 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 1983
-traniter = 1974
-tranpoints = 967
-accept = 947
+totiter = 2007
+traniter = 1998
+tranpoints = 976
+accept = 956
 rejected = 20
 matrix size = 13
 fillins = 1
 solver = Normal
-Matrix Compiler1: 738 bytes object code size  0.5/0.3/[0.2]
-Matrix Compiler2: 1.18 KB object code size  0.4/0.4/[0.2]
+Matrix Compiler1: 738 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 1.18 KB object code size  0.1/0.2/[0.1]
 

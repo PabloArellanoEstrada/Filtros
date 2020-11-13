@@ -1,4 +1,4 @@
-* C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\A11_Notch_Pasivo.asc
+* C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\Filtros\A11_Notch_Pasivo.asc
 R1 N001 Vin {R1}
 C1 N001 0 {C1}
 C2 Vin N002 {C2}

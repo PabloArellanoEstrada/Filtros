@@ -6,12 +6,16 @@ from apply_ltspice_filter import apply_ltspice_filter
 import matplotlib.pyplot as plt
 from scipy import signal
 
+frec = float(input("Ingrese la frecuencia en Rad/seg de la función para el filto: "))
+w_frec = float
+w_frec = 2*3.1416*frec
+
 ##################################################
 ##             INYECTAR SENAL ESCALON           ##
 ##################################################
 
 # our samples shall be 100 ms wide
-sample_width=3.5e-3
+sample_width=6e-3
 # time step between samples: 0.1 ms
 delta_t=1e-7
 samples = int(sample_width/delta_t)
@@ -30,11 +34,11 @@ else:
 ##             VALORES INICIALES                ##
 ##################################################
 
-R1 = 40
-R2 = 100
-C1 = 2e-6
-C2 = 1e-6
-C3 = 2e-6
+R1 = 1e3
+R2 = 2e3
+C1 = 200e-9
+C2 = 150e-9
+C3 = 100e-9
 
 ##################################################
 ##               ENVIAR A LTSPICE
@@ -97,7 +101,7 @@ delta_t=1e-5
 samples = int(sample_width/delta_t)
 
 time = np.linspace(0,sample_width,samples)
-signal_a = np.sin(11158*time) ## senal seno
+signal_a = np.sin(w_frec*time) ## senal seno
 
 if sys.platform == "darwin":
   """ In order for the command /Applications/LTspice.app/Contents/MacOS/LTspice -b
@@ -156,6 +160,8 @@ f = logspace(1, 5)
 w = 2 * pi * f
 w, mag, phase = signal.bode(system,w)
 plt.semilogx(f, mag);
+plt.ylabel("Magnitud (dB)")
+plt.xlabel("Frecuencia(Hz)")
 plt.show()
 
 

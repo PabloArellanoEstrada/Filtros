@@ -1,4 +1,4 @@
-* C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\A8_AltaMFF_2.asc
+* C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\Filtros\A8_AltaMFF_2.asc
 R1 N002 Vout {R1}
 C1 N001 Vin {C1}
 XU1 0 N002 Vcc -Vcc Vout LT1001

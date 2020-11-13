@@ -10,14 +10,14 @@ from scipy import signal
 ##             VALORES INICIALES                ##
 ##################################################
 
-R1o = 40
-R2o = 100
-R3o = 200
-R4o = 40
-R5o = 100
-R6o = 200
-C1o = 2e-6
-C2o = 1e-6
+R1o = 1e3
+R2o = 1.5e3
+R3o = 2e3
+R4o = 3e3
+R5o = 2.5e3
+R6o = 1e3
+C1o = 200e-9
+C2o = 150e-9
 
 R1 = R1o
 R2 = R2o
@@ -443,7 +443,7 @@ w = 2 * pi * f
 w, mag, phase = signal.bode(system,w)
 plt.semilogx(f, mag, label="Mas 20%");
 
-plt.xlabel("Frecuencia(f)")
+plt.xlabel("Frecuencia(Hz)")
 plt.ylabel("Magnitud (dB)")
 plt.legend()
 R5=R5o
@@ -528,7 +528,7 @@ w = 2 * pi * f
 w, mag, phase = signal.bode(system,w)
 plt.semilogx(f, mag, label="Mas 20%");
 
-plt.xlabel("Frecuencia(f)")
+plt.xlabel("Frecuencia(Hz)")
 plt.legend()
 R6=R6o
 
@@ -611,7 +611,7 @@ w = 2 * pi * f
 w, mag, phase = signal.bode(system,w)
 plt.semilogx(f, mag, label="Mas 20%");
 
-plt.xlabel("Frecuencia(f)")
+plt.xlabel("Frecuencia(Hz)")
 plt.legend()
 C1=C1o
 
@@ -694,7 +694,7 @@ w = 2 * pi * f
 w, mag, phase = signal.bode(system,w)
 plt.semilogx(f, mag, label="Mas 20%");
 
-plt.xlabel("Frecuencia(f)")
+plt.xlabel("Frecuencia(Hz)")
 plt.legend()
 C2=C2o
 

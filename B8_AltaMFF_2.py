@@ -10,11 +10,11 @@ from scipy import signal
 ##             VALORES INICIALES                ##
 ##################################################
 
-R1o = 40
-R2o = 100
-C1o = 2e-6
-C2o = 1e-6
-C3o = 2e-6
+R1o = 1e3
+R2o = 2e3
+C1o = 200e-9
+C2o = 150e-9
+C3o = 100e-9
 
 
 R1 = R1o
@@ -273,7 +273,7 @@ w = 2 * pi * f
 w, mag, phase = signal.bode(system,w)
 plt.semilogx(f, mag, label="Mas 10%");
 plt.ylabel("Magnitud (dB)")
-plt.xlabel("Frecuencia(f)")
+plt.xlabel("Frecuencia(Hz)")
 
 plt.legend()
 C1=C1o
@@ -357,7 +357,7 @@ w = 2 * pi * f
 w, mag, phase = signal.bode(system,w)
 plt.semilogx(f, mag, label="Mas 20%");
 
-plt.xlabel("Frecuencia(f)")
+plt.xlabel("Frecuencia(Hz)")
 plt.legend()
 C2 = C2o
 
@@ -441,7 +441,7 @@ w = 2 * pi * f
 w, mag, phase = signal.bode(system,w)
 plt.semilogx(f, mag, label="Mas 20%");
 
-plt.xlabel("Frecuencia(f)")
+plt.xlabel("Frecuencia(Hz)")
 plt.legend()
 C3=C3o
 

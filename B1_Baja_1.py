@@ -10,9 +10,9 @@ from scipy import signal
 ##             VALORES INICIALES                ##
 ##################################################
 
-R1o = 40
-R2o = 100
-C1o = 2e-6
+R1o = 1e3
+R2o = 2e3
+C1o = 200e-9
 
 R1 = R1o
 R2 = R2o

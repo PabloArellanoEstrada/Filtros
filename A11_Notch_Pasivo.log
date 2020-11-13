@@ -1,23 +1,23 @@
-Circuit: * C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\A11_Notch_Pasivo.asc
+Circuit: * C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\Filtros\A11_Notch_Pasivo.asc
 
 WARNING: Less than two connections to node VCC.  This node is used by V1.
 WARNING: Less than two connections to node -VCC.  This node is used by V2.
 .OP point found by inspection.
 
-Date: Thu Nov 12 18:22:16 2020
-Total elapsed time: 0.064 seconds.
+Date: Fri Nov 13 14:37:41 2020
+Total elapsed time: 0.051 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 4870
-traniter = 4870
-tranpoints = 2436
-accept = 2434
+totiter = 4854
+traniter = 4854
+tranpoints = 2428
+accept = 2426
 rejected = 2
 matrix size = 9
-fillins = 1
+fillins = 0
 solver = Normal
-Matrix Compiler1: 332 bytes object code size  0.1/0.1/[0.0]
-Matrix Compiler2: 507 bytes object code size  0.1/0.2/[0.1]
+Matrix Compiler1: 242 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: 505 bytes object code size  0.2/0.1/[0.1]
 
