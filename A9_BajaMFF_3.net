@@ -1,0 +1,19 @@
+* C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\A9_BajaMFF_3.asc
+R1 Vin N002 {R1}
+C1 0 N002 {C1}
+XU1 0 N003 Vcc -Vcc Vout LT1001
+C2 0 N001 {C2}
+V1 Vcc 0 15
+V2 0 -Vcc 15
+V3 Vin 0 PWL file=sig_in.csv AC 5
+R2 N002 N001 {R2}
+C3 Vout N003 {C3}
+R3 N001 N003 {R3}
+R4 N001 Vout {R4}
+.tran 0 {transtop} 0 {timestep} startup
+.include param.txt
+.include trancmd.txt
+* do not edit this by hand
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,23 @@
+Circuit: * C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\Draft1.asc
+
+WARNING: Less than two connections to node NC_01.  This node is used by Q5.
+WARNING: Less than two connections to node NC_02.  This node is used by Q6.
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Nov 11 22:53:49 2020
+Total elapsed time: 0.543 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 53458
+traniter = 53428
+tranpoints = 24028
+accept = 14523
+rejected = 9505
+matrix size = 52
+fillins = 32
+solver = Normal
+Matrix Compiler1: 4.97 KB object code size  0.8/0.4/[0.3]
+Matrix Compiler2: off  [0.4]/0.5/1.6
+

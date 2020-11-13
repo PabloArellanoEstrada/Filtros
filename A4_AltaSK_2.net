@@ -1,0 +1,16 @@
+* C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\A4_AltaSK_2.asc
+R1 0 N002 {R1}
+C1 Vin N001 {C1}
+XU1 N002 Vout Vcc -Vcc Vout LT1001
+C2 N002 N001 {C2}
+V1 Vcc 0 15
+V2 0 -Vcc 15
+V3 Vin 0 PWL file=sig_in.csv AC 5
+R2 Vout N001 {R2}
+.tran 0 {transtop} 0 {timestep} startup
+.include param.txt
+.include trancmd.txt
+* do not edit this by hand
+.lib LTC.lib
+.backanno
+.end

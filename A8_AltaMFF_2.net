@@ -1,0 +1,17 @@
+* C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\A8_AltaMFF_2.asc
+R1 N002 Vout {R1}
+C1 N001 Vin {C1}
+XU1 0 N002 Vcc -Vcc Vout LT1001
+C2 N001 Vout {C2}
+V1 Vcc 0 15
+V2 0 -Vcc 15
+V3 Vin 0 PWL file=sig_in.csv AC 5
+R2 0 N001 {R2}
+C3 N001 N002 {C3}
+.tran 0 {transtop} 0 {timestep} startup
+.include param.txt
+.include trancmd.txt
+* do not edit this by hand
+.lib LTC.lib
+.backanno
+.end

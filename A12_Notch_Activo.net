@@ -1,0 +1,21 @@
+* C:\Users\pablo\OneDrive\Escritorio\Universidad\Analogica 1\Proyecto Uno\Proyecto Analogica\A12_Notch_Activo.asc
+R1 N002 Vin {R1}
+C1 Vin N002 {C1}
+C2 N003 N001 {C2}
+V1 Vcc 0 15
+V2 0 -Vcc 15
+V3 Vin 0 PWL file=sig_in.csv AC 5
+R2 N002 0 {R2}
+R4 Vout N001 {R4}
+XU2 N002 N001 Vcc -Vcc Vout LT1001
+XU3 N004 N001 Vcc -Vcc N003 LT1001
+R3 N003 N002 {R3}
+R5 N004 Vout {R5}
+R6 Vin N004 {R6}
+.tran 0 {transtop} 0 {timestep} startup
+.include param.txt
+.include trancmd.txt
+* do not edit this by hand
+.lib LTC.lib
+.backanno
+.end
